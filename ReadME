@@ -1,0 +1,55 @@
+# 🧠 Neurocognition – Modular iOS Tools for Cognitive Screening
+
+**Neurocognition** is a suite of iOS apps built using Swift and SwiftUI that assess cognitive and neurological function using the iPhone camera and on-device AI. Each module is focused on a single task, such as facial symmetry detection, fall risk analysis, or motor response timing.
+
+This repository will contain standalone apps, each designed to assess a specific neurological marker — beginning with eyebrow tracking for facial asymmetry evaluation.
+
+---
+
+## 📦 Modules
+
+| Module | Description | Status |
+|--------|-------------|--------|
+| **Eyebrow Tracker** | Prompts user to raise eyebrows; uses Vision framework to detect symmetry or asymmetry | ✅ Completed |
+| Smile Tracker | Detects left/right smile asymmetry and motor response delay | ⏳ In progress |
+| Eye Tracking | Monitors saccades and gaze focus during prompts | 🔜 Planned |
+| Fall Detection | Detects sudden vertical posture loss using rear camera | ✅ [See Fall Detection Repo](https://github.com/sonoranrobotics/fall-detection-app) |
+
+---
+
+## 📱 Eyebrow Tracker App
+
+The **Eyebrow Tracker** module prompts the user to raise their eyebrows and uses Apple’s **Vision Framework** to detect motion in the left and right eyebrows relative to the eyes.
+
+### Features:
+- On-device face landmark detection (VNDetectFaceLandmarksRequest)
+- Calculates vertical eyebrow-eye distance delta
+- Displays: “Left raised”, “Right raised”, “Both even”, or “No movement”
+- Runs offline with no cloud dependency
+
+### Demo:
+![eyebrow demo](screenshots/eyebrow-demo.gif)
+
+---
+
+## 🧠 Clinical Relevance
+
+Neurocognition tools are inspired by clinical needs in neurology, geriatrics, and emergency care — especially for rapid stroke screening, early detection of cognitive decline, and fall risk. This project evolved from real-world work with physicians at **Mayo Clinic** and continues through **Sonoran Robotics LLC** in partnership with the **University of Arizona Center for Innovation**.
+
+---
+
+## 🛠 Requirements
+
+- iPhone with iOS 17+
+- Xcode 15+
+- Swift 5.9+
+- TrueDepth or front camera
+
+---
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/sonoranrobotics/neurocognition.git
+cd neurocognition/EyebrowTracker
+open EyebrowTracker.xcodeproj
