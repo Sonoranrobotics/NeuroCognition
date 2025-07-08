@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Neurocognition: Eyebrow Tracker"
+version: 1.0.0
+doi: 10.5281/zenodo.15839415
+date-released: 2025-07-07
+authors:
+  - family-names: Hall
+    given-names: Sean
+    affiliation: Sonoran Robotics LLC
+    orcid: https://orcid.org/0000-0000-0000-0000  # Replace with your ORCID if available
+repository-code: https://github.com/sonoranrobotics/neurocognition
+license: MIT
+abstract: >
+  Neurocognition: Eyebrow Tracker is an iOS module that prompts users to raise their eyebrows and uses Apple's Vision Framework to detect facial symmetry in real time. This app is part of a modular system designed for cognitive and neurological screening on iPhone devices. All processing is performed entirely on-device to preserve user privacy.
+keywords:
+  - neurocognition
+  - facial symmetry
+  - iOS
+  - SwiftUI
+  - stroke screening
+  - cognitive health
+  - on-device AI
